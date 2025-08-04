@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+  <title>Salim's Portfolio</title>
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+    <input type="checkbox" id="dark-mode-toggle" hidden>
+    
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" hidden>
+    
+    <!-- Dark Mode Overlay -->
+    <label for="menu-toggle" class="dark-mode-overlay"></label>
+    
+    <!-- Header with Navigation - Fixed Theme Toggle Position -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Salim<span>Mbita</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <label for="dark-mode-toggle" class="theme-toggle">
+                        <i class="fas fa-moon" id="dark-icon"></i>
+                        <i class="fas fa-sun" id="light-icon"></i>
+                    </label>
+                </li>
+            </ul>
+            
+            <div class="toggle-container">
+                <label for="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation - Fixed -->
+    <div class="mobile-nav">
+        <label for="menu-toggle" class="close-menu">
+            <i class="fas fa-times"></i>
+        </label>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <label for="dark-mode-toggle" class="theme-toggle" style="font-size: 1.5rem;">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Salim Mbita</span></h1>
+                <p>An enthusiastic software developer. I create responsive web designs that are easy to interact with.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="hero-image">
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="image.jpg" alt="Alex Developer">
+                </div>
+                <div class="about-content">
+                    <p>How are you? I'm Salim, an intermediate software engineer who is always passionate about this descipline</p>
+                    <p>I developed the passion towards toward tech two years ago when I met friends in the library. There heads and eyes really fixed on there laptops coding, Being a curious person, I decided to ask for clarification on what they were doing. And their explanations, I was inspired and decised to aspire to know more. </p>
+                    <p>I believe in writing clean, maintainable code and constantly learning new technologies to stay at the forefront of this rapidly evolving industry.</p>
+                    <p>Besides coding, I like hiking, reading  personal development books and blogs, watching inspiration movies or just taking nature photographs.</p>
+                    <div class="about-btns" style="margin-top: 30px;">
+                        <a href="salim'sresume.pdf" class="btn"><i class="fa-solid fa-angles-down"></i> Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Responsive Design</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">MySQL</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Methods</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Git & GitHub</div>
+                        <div class="skill-item">Trello</div>
+                        <div class="skill-item">Canva</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section - Fixed Layout -->
+    <section id="education">
+        <div class="container">
+            <h2>Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>B.S Statistics and Programming</h4>
+                        <span class="date">2022 - Present</span>
+                        <p>Kenyatta University</p>
+                        <p>Specialized in data collection,analization, visualization, interpretation and presentation".</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Software Engineer</h4>
+                        <span class="date">2025 - Present</span>
+                        <p>Power Learn Project Academy</p>
+                        <p>Just started learning software engineering where in future I will specialize in web development and create responsiveand interactive web designs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Frontend Developer</h4>
+                        <span class="date">Long Holidays</span>
+                        <p>Self Taught</p>
+                        <p>I started learning frontend development last year where I have been able to well equip myself with skills which I've already implemented in sevel projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="emailtemplate.jpeg" alt="CodeCollab">
+                    </div>
+                    <div class="project-content">
+                        <h3>Eamil Templates<Template></Template></h3>
+                        <p>This is an HTML Email Template. I always create these to reduce the workload of the for developers who may find it defficult to develop them.</p>.</p>
+                        <div class="project-tags">
+                            <div class="project-tag">HTML</div>
+                            <div class="project-tag">CSS</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Demo &raquo;</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="portfolio1.jpeg" alt="EcoTrack">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Websites</h3>
+                        <p>Personal portfolio website is a description and individual's skills and qualifications. I always create them for clients in all fields.</p>
+                        <div class="project-tags">
+                            <div class="project-tag">CSS</div>
+                            <div class="project-tag">Git & GitHub</div>
+                            <!-- <div class="project-tag">Chart.js</div> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sali-mmbita.github.io/thePortifolio/" class="btn btn-outline">View Demo &raquo;</a>
+                            <a href="https://github.com/Sali-mmbita/thePortifolio.git" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="landingpage.jpeg" alt="TaskFlow">
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page</h3>
+                        <p>A landing page is where a visitor lands after clicking a web page link or ads. I've been able to create sevel of them with the skills I have accumulated within one year .</p>
+                        <div class="project-tags">
+                            <div class="project-tag">CSS</div>
+                            <div class="project-tag">Javascript</div>
+                            <div class="project-tag">HTML</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Demo &raquo;</a>
+                            <a href="#" class="btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interests Section -->
+    <section id="interests">
+        <div class="container">
+            <h2>My Interests</h2>
+            <div class="interests-container">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Exploring neural networks, natural language processing, and computer vision applications.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Studying ethical hacking, cryptography, and security best practices for web applications.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>Creating interactive experiences with Unity and exploring game design principles.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Outdoor Activities</h3>
+                    <p>Hiking, camping, and photography to balance screen time with nature exploration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>othyenosaalim@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+1 (254) 746-94-8369</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Availability</h3>
+                            <p>Monday - Friday: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="egyouremail@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="How can I help you?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Send me a message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send a Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Sali-mmbita"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/salim-othyeno-37b71"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com/codewithsalim2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@codewithsalim_2"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Salim Mbita | All rights reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
